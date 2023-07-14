@@ -1,0 +1,111 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#score {
+  text-align: center;
+}
+
+.score {
+  margin-top: 10px;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 1px;
+  width: 400px;
+  height: 400px;
+  background-color: #2fd034;
+  margin: 15px auto;
+}
+
+.cell {
+  background-color: #2fd034;
+}
+
+.snake {
+  background-color: rgb(52,52,52);
+  position: relative;
+}
+
+.snake-head {
+  position: relative;
+}
+
+.eye {
+position: absolute;
+width: 8px;
+height: 8px;
+background-color: yellow;
+border-radius: 50%;
+}
+
+.eye.left {
+top: 20%;
+left: 20%;
+}
+
+.eye.right {
+top: 20%;
+right: 20%;
+}
+
+.apple {
+  background-color: red;
+  border-radius: 80%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  column-gap: 25px;
+}
+
+#start-button {
+  width: 150px;
+  text-transform: uppercase;
+}
+
+#restart-button {
+  width: 150px;
+  text-transform: uppercase;
+}
+
+#reset-button {
+  width: 150px;
+}
+
+.start-restart-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+
+#snake-head {
+  background-color: rgb(52, 52, 52);
+  position: relative;
+}
+
+#snake-head .eye {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+#snake-head .eye.left {
+  top: 20%;
+  left: 20%;
+}
+
+#snake-head .eye.right {
+  top: 20%;
+  right: 20%;
+}
