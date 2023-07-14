@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Змейка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Змейка</h1>
+    
+        <div class="color-picker">
+          <label for="snake-color-select">Выберите цвет змеи:</label>
+          <select id="snake-color-select">
+            <option value="rgb(52, 52, 52)">Стандартный</option>
+            <option value="blue">Синий</option>
+            <option value="deeppink">Розовый</option>
+            <option value="darkRed">Бордовый</option>
+            <option value="darkViolet">Фиолетовый</option>
+            <option value="magenta">Сиреневый</option>
+            <option value="darkGreen">Зеленый</option>
+            <option value="tomato">Томатный</option>
+          </select>
+        </div>
+        
+        <div class="score">
+          <span>Очки: <span id="current-score">0</span></span>
+          <span>Лучший результат: <span id="best-score">0</span></span>
+        </div>
+        
+        <div id="game-board">
+        </div>
+        
+        <div class="buttons">
+          <button id="reset-button">Обнулить результат</button>
+          <div class="start-restart-buttons">
+            <button id="start-button">Старт</button>
+            <button id="restart-button" style="display: none;">Начать заново</button>
+          </div>
+        </div>
+
+  
+    <script src="snake.js"></script>
+</body>
+</html>
